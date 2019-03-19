@@ -15,7 +15,7 @@ class user_meta {
     // page or single post
     if ( ((is_page()) && ($my_options->GetOption('user-pages') == 1)) || ((is_single()) && ($my_options->GetOption('user-posts') == 1)) ) {
 
-       // thumbnail or options_image
+       // thumbnail / options_image
        if(has_post_thumbnail($post->ID)) {
            $image_attributes = wp_get_attachment_image_src(get_post_thumbnail_id( $post->ID ), 'medium');
            $img_src = $image_attributes[0];
@@ -28,7 +28,7 @@ class user_meta {
        } else {
            // $excerpt = get_bloginfo('description');
            // $excerpt = "Click here to read more from our blog.";
-           // $excerpt = wp_trim_words( get_the_content(), 20, '...' );
+           $excerpt = wp_trim_words( get_the_content(), 20, '...' );
         }
         if (strlen($excerpt)<5) {
             $excerpt = apply_filters( 'the_content', $post->post_content );
