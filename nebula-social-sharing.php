@@ -24,3 +24,34 @@ if(is_ssl()){
 define( 'NEBULA_SOCIAL_URL', $plugin_url.'udm-social/');
 define( 'NEBULA_SOCIAL_DIR', plugin_dir_path(__FILE__));
 define( 'NEBULA_SOCIAL_VERS', '1.0.0');
+
+$startup = new Initialization();
+
+
+
+
+// Launch function goes here:
+
+
+
+
+
+
+
+
+class Initialization{
+	public function __construct(){
+	  register_activation_hook( __FILE__, array($this, 'plugin_activated' ));
+	  register_deactivation_hook( __FILE__, array($this, 'plugin_deactivated' ));
+	  register_uninstall_hook( __FILE__, array($this, 'plugin_uninstall' ) );
+	}
+	public static function plugin_activated(){
+	  set_transient('_nebula_social_welcome', true,30);
+	}
+	public function plugin_deactivated(){
+		delete_transient('_nebula_social_welcome');
+	}
+	public function plugin_uninstall() {
+	  delete_transient('_nebula_social_welcome');
+	}
+}
