@@ -1,40 +1,38 @@
-/*
-* === options and meta tabs styles
-*/
 /* format columns for labels and input values */
 .nebula-options label {
-    width: 130px;
-    display: inline-block;
+  width: 130px;
+  display: inline-block;
 }
 .nebula-options h4 {
-    margin: 0;
+  margin: 0;
 }
 .meta-side label {
-    width: 100px;
-    display: inline-block;
+  width: 100px;
+  display: inline-block;
 }
 
 .nebula-options > label {
-    width: 130px;
-    display: inline-block;
+  width: 130px;
+  display: inline-block;
 }
 input.meta-time {
-    width: 40px;
+  width: 40px;
 }
+
 /* used by background video settings */
 .hide {
-    display: none;
+  display: none;
 }
 #featured-second-image-container {
-    width: 320px;
+  width: 320px;
 }
 #featured-first-image-container img,
 #featured-second-image-container img
 {
 	width:  auto;
 	height: auto;
-        max-height: 400px;
-        max-width: 100%;
+  max-height: 400px;
+  max-width: 100%;
 }
 
 #featured-first-image-info,
@@ -43,8 +41,8 @@ input.meta-time {
 	display: none;
 }
 .show {
-    display: block;
+  display: block;
 }
 .hide {
-    display: none;
+  display: none;
 }
