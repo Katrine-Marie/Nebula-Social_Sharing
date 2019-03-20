@@ -1,0 +1,50 @@
+/*
+* === options and meta tabs styles
+*/
+/* format columns for labels and input values */
+.nebula-options label {
+    width: 130px;
+    display: inline-block;
+}
+.nebula-options h4 {
+    margin: 0;
+}
+.meta-side label {
+    width: 100px;
+    display: inline-block;
+}
+
+.nebula-options > label {
+    width: 130px;
+    display: inline-block;
+}
+input.meta-time {
+    width: 40px;
+}
+/* used by background video settings */
+.hide {
+    display: none;
+}
+#featured-second-image-container {
+    width: 320px;
+}
+#featured-first-image-container img,
+#featured-second-image-container img
+{
+	width:  auto;
+	height: auto;
+        max-height: 400px;
+        max-width: 100%;
+}
+
+#featured-first-image-info,
+#featured-second-image-info
+{
+	display: none;
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
