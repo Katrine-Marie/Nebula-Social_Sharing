@@ -2,36 +2,36 @@ var destination = 'nothing';
 
 jQuery(function() {
 
-        jQuery( '#set-first-thumbnail' ).on( 'click', function( evt ) {
-                destination = 'first';
-                evt.preventDefault();
+  jQuery( '#set-first-thumbnail' ).on( 'click', function( evt ) {
+    destination = 'first';
+    evt.preventDefault();
 
-                renderMediaUploader( $ );
-        });
-        jQuery( '#remove-first-thumbnail' ).on( 'click', function( evt ) {
-               destination = 'first';
-                evt.preventDefault();
+    renderMediaUploader( $ );
+  });
+  jQuery( '#remove-first-thumbnail' ).on( 'click', function( evt ) {
+    destination = 'first';
+    evt.preventDefault();
 
-                resetUploadForm( $ );
+    resetUploadForm( $ );
 
-        });
-        jQuery( '#set-second-thumbnail' ).on( 'click', function( evt ) {
-               destination = 'second';
-                evt.preventDefault();
+  });
+  jQuery( '#set-second-thumbnail' ).on( 'click', function( evt ) {
+    destination = 'second';
+    evt.preventDefault();
 
-                renderMediaUploader( $ );
+    renderMediaUploader( $ );
 
-        });
-       jQuery( '#remove-second-thumbnail' ).on( 'click', function( evt ) {
-               destination = 'second';
-                evt.preventDefault();
+  });
+  jQuery( '#remove-second-thumbnail' ).on( 'click', function( evt ) {
+    destination = 'second';
+    evt.preventDefault();
 
-                resetUploadForm( $ );
-        jQuery( '#second-thumbnail-height' ).val( '0' );
-        jQuery('#logo').attr('src','none');
-        });
-    renderFeaturedImage( $, 'first' );
-    renderFeaturedImage( $, 'second' );
+    resetUploadForm( $ );
+    jQuery( '#second-thumbnail-height' ).val( '0' );
+    jQuery('#logo').attr('src','none');
+  });
+  renderFeaturedImage( $, 'first' );
+  renderFeaturedImage( $, 'second' );
 
 } );
 
