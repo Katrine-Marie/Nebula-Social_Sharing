@@ -29,13 +29,19 @@ $startup = new Initialization();
 
 
 
+function launch () {
 
-// Launch function goes here:
+    require_once NEBULA_SOCIAL_DIR . 'admin/class-welcome.php';
+		$my_welcome = new welcome_class();
 
+    include_once NEBULA_SOCIAL_DIR .'admin/pages/class-options.php';
+		$my_options = new options_admin();
 
+    include_once NEBULA_SOCIAL_DIR .'user/class-user-meta.php';
+    $my_user = new user_meta();
 
-
-
+}
+launch();
 
 
 
