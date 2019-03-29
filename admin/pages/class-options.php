@@ -133,7 +133,7 @@ if (!class_exists('options_admin')) {
 
    	public function has_valid_nonce() {
     	// If the field isn't even in the $_POST, then it's invalid.
-      if (!isset($_POST['NEBULA-custom-message'])) { // Input var okay.
+      if (!isset($_POST['NEBULA-custom-message'])) {
       	return false;
       }
 
@@ -143,6 +143,6 @@ if (!class_exists('options_admin')) {
       return wp_verify_nonce($field, $action);
     }
 
-  } // Class end
+  }
 
 }
