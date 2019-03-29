@@ -66,8 +66,6 @@ if (!class_exists('options_admin')) {
       $this->nebula_default_options[$this->nebula_prefix . 'meta-thumbnail-src'] = '';
       $this->nebula_default_options[$this->nebula_prefix . 'meta-thumbnail-alt'] = '';
       $this->nebula_default_options[$this->nebula_prefix . 'meta-thumbnail-title'] = '';
-      $this->nebula_default_options[$this->nebula_prefix . 'search_meta'] = '';
-      $this->nebula_default_options[$this->nebula_prefix . 'google_tag'] = '';
       $this->nebula_default_options[$this->nebula_prefix . 'site_title'] = '';
       $this->nebula_default_options[$this->nebula_prefix . 'site_desc'] = '';
       $this->nebula_default_options[$this->nebula_prefix . 'fb_url'] = 'default';
@@ -95,8 +93,6 @@ if (!class_exists('options_admin')) {
       	    case 'meta-thumbnail-src':
       	    case 'meta-thumbnail-alt':
       	    case 'meta-thumbnail-title':
-      	    case 'search_meta':
-      	    case 'google_tag':
       	    case 'site_title':
       	    case 'site_desc':
       	    case 'fb_url':
