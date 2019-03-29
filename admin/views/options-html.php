@@ -61,16 +61,6 @@
     <label for="site_desc" class="regular-number">Site Description: </label>
     <input type="text" name="site_desc" class="meta-large" value="<?php echo $this->GetOption('site_desc'); ?>" >
 
-    <!--
-    <h3>Google Data</h3>
-    <p>If you want to use this to register with Google Search Console</p>
-    <label for="search_meta" class="regular-number">Google Search</label>
-    <input type="text" name="search_meta" class="meta-large"  value="<?php echo $this->GetOption('search_meta'); ?>" >
-    <br/>
-    <p>If you want to use this to setup Google Tag manager</p>
-    <label for="google_tag" class="regular-number">Tag manager: </label>
-    <input type="text" name="google_tag" value="<?php echo $this->GetOption('google_tag'); ?>" >
-		-->
     <input type="hidden" name="action" value="NEBULA_social_settings">
     <input type="hidden" name="version" value="<?php echo $this->GetOption('version'); ?>">
     <?php
@@ -78,7 +68,7 @@
       submit_button();
     ?>
   </form>
-    
+
   <h5><a href="index.php?page=nebula-social-about">Return to the Welcome Page</a></h5>
 
 </div>
